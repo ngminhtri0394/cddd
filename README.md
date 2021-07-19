@@ -31,17 +31,19 @@ Or with GPU support:
 ```bash
 pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.10.0-cp36-cp36m-linux_x86_64.whl
 ```
-And install the cddd package:
-```bash
-pip install .
-```
-
 ### Downloading Pretrained Model
 A pretrained model as described in ref. 1 is available on Google Drive. Download and unzip by execuiting the bash script "download_default_model.sh":
 ```bash
 ./download_default_model.sh
 ```
 The default_model.zip file can also be downloaded manualy under https://drive.google.com/open?id=1oyknOulq_j0w9kzOKKIHdTLo5HphT99h
+
+And install the cddd package:
+```bash
+pip install .
+```
+
+
 ### Testing
 Extract molecular descriptors from two QSAR datasets (ref. 2,3) and evaluate the perfromance of a SVM trained on these descriptors.
 ```bash
